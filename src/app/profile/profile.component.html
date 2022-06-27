@@ -1,0 +1,47 @@
+<div class="wrapper">
+  <div class="card-container">
+      <span class="pro">PRO</span>
+      <img src="/assets/img/seun.jpeg" alt="user" style="object-fit: contain;"/>
+      <h3>Oluwaseun Bayode</h3>
+      <h6></h6>
+      <p>User interface designer and <br/>
+        fullstack developer <br></p>
+      <div class="buttons">
+          <button type="button"  class="primary" (click)="Skills = true">
+              View Skills
+          </button>
+          <button  type="button" class="primary"  (click)=" Skills = false">
+              My Statement
+          </button>
+      </div>
+      <div class="skills" *ngIf="Skills; else isSkills">
+          <h5>Skills</h5>
+          <ul>
+              <li>UI / UX</li>
+              <li>Front End Development</li>
+              <li>HTML</li>
+              <li>Vue</li>
+              <li>Machine Learning</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Angular</li>
+              <li>React</li>
+              <li>FastApi</li>
+              <li>Transformers</li>
+              <li>NLP</li>
+            </ul>
+      </div>
+      <ng-template #isSkills>
+        <div class="skills">
+          <h5>Statement</h5>
+          <div style = " border-radius: 25px;">
+              <mat-card class="example-card">
+                <mat-card-content>
+                  <p>{{longText}}</p>
+                </mat-card-content>
+              </mat-card>
+          </div>
+        </div>
+      </ng-template>
+  </div>
+</div>
