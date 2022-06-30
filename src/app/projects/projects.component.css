@@ -7,6 +7,11 @@
             perspective: 800px;
   }
 
+  .primary{
+    z-index: 2;
+   background-color: #1F1A36;
+   color: #B3B8CD;
+  }
     .tp-box {
       position: relative;
       width: 350px;
@@ -65,11 +70,14 @@
 }
 
 .project-banner{
-  width: 100%;
   height: 200px;
   background-color: #1F1A36;
   border: 1px solid #2D2747;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   margin-top: -4px;
+}
+
+.project-banner > img{
+  height: 200px;
 }

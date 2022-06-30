@@ -12,17 +12,17 @@
         <div class="scrollbar" id="style-1">
           <div class="force-overflow" style="background-color: rgb(115, 49, 200)">
             <mat-nav-list>
-            <mat-list>
-              <div mat-subheader >
-                <h2 style="color:white">Favorite</h2>
-              </div>
-              <mat-list-item *ngFor="let folder of folders">
-                <mat-icon style="color:white" mat-list-icon>{{folder.icon}}</mat-icon>
-                <div mat-line>
-                  <a style="color:white" routerLink={{folder.link}}>{{folder.name}}</a>
+              <mat-list>
+                <div mat-subheader >
+                  <h2 style="color:white; margin-left: 15px; margin-top: 15px; font-size: 24px;">Favorite</h2>
                 </div>
-              </mat-list-item>
-            </mat-list>
+                <mat-list-item *ngFor="let folder of folders">
+                  <mat-icon style="color:white" mat-list-icon>{{folder.icon}}</mat-icon>
+                  <div mat-line>
+                    <a style="color:white" routerLink={{folder.link}}>{{folder.name}}</a>
+                  </div>
+                </mat-list-item>
+              </mat-list>
             </mat-nav-list>
           </div>
         </div>
@@ -42,7 +42,7 @@
           aria-label="Example icon-button with menu icon">
           <mat-icon>menu</mat-icon>
         </button>
-        <span>Seun's Profile</span>
+        <span>Seun's Djing Project</span>
         <span class="example-spacer"></span>
         <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
           <mat-icon>favorite</mat-icon>
@@ -62,7 +62,7 @@
       <span>Second End</span>
     </mat-toolbar-row>
     <mat-toolbar-row style=" margin-left: auto; margin-right: auto;">
-      <div style="width: 50%; margin-left: auto; margin-right: auto; text-align:center;">
+      <div style="width: 50%; margin: 5px auto; text-align:center;">
         <a href = 'https://www.instagram.com/accounts/login/?next=/oluwaseun_bayode/' style="color:white">
           <fa-icon [icon]="['fab', 'facebook']" size="2x" style="margin-right: 10px;"></fa-icon>
         </a>
