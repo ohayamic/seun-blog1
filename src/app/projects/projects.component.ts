@@ -29,12 +29,12 @@ export class ProjectsComponent implements OnInit {
   longText1 = `I explored some of the major functionality of React.js. This explored interraction
   of events and data. React router and click events, change events that interracts with data and
   display users request with clicks. Some functionality is not implemented `;
-  longText2 = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
+  longText2 = `Explores Dataflow between components. The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
   from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
   originally bred for hunting.`;
   longText3 = `API, Database, useEffects, useState some of the functionality used in Modern website was used here.
   I also explored the use of styled components, react-router-dom and redux. `;
-  
+
   constructor() { }
 
   ngOnInit(): void{ };

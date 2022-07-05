@@ -1,97 +1,108 @@
   <div class="wrapper">
-    <section class="project-banner">
-        <img src="./assets/img/undraw_artificial_intelligence_re_enpp.svg" alt="me" />
-    </section>
-    <section  class="tp-wrapper">
-        <div class="tp-box" (click)="toggleFlip()" [@flipState]="flip">
+    <div>
+      <section class="project-banner">
+          <img src="./assets/img/undraw_artificial_intelligence_re_enpp.svg" alt="me" />
+      </section>
+      <div>
+        <p>
+            This page shows some of the things I am interested in, my prospects and ambitions.
+            The things I am working on, my likes and dislikes
+        </p>
+      </div>
+    </div>
+    <div style="font-size:18px; position: absolute; top:200px; width: 100%;">
+      <section  class="tp-wrapper">
+          <div class="tp-box" (click)="toggleFlip()" [@flipState]="flip">
+            <div class="tp-box__side tp-box__front">
+              <mat-card class="example-card">
+                <mat-card-title>My Portfolio App</mat-card-title>
+                <mat-card-subtitle>Basic Usage Of React.js</mat-card-subtitle>
+                <mat-card-content>
+                  <p>This card indeterminates progress bar.</p>
+                  <p>{{longText}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button class="primary">Click to Play Video </button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+            <div class="tp-box__side tp-box__back">
+              <video width="100%" height="335px" controls autoplay style="border-radius: 25px">
+                <source src="./assets/img/Screen recording 2022-06-29 10.09.28 PM.webm" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+      </section>
+      <section  class="tp-wrapper">
+        <div class="tp-box" (click)="toggleFlip1()" [@flipState]="flip1">
           <div class="tp-box__side tp-box__front">
-            <mat-card class="example-card">
-              <mat-card-title>My Portfolio App</mat-card-title>
-              <mat-card-subtitle>Basic Usage Of React.js</mat-card-subtitle>
-              <mat-card-content>
-                <p>This card indeterminates progress bar.</p>
-                <p>{{longText}}</p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button class="primary">Click to Play Video </button>
-              </mat-card-actions>
-            </mat-card>
+              <mat-card class="example-card">
+                <mat-card-title>Online Booking System</mat-card-title>
+                <mat-card-subtitle></mat-card-subtitle>
+                <mat-card-content>
+                  <p>Intermediate React.js App</p>
+                  <p>{{longText1}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button class="primary">Click to Play Video </button>
+                </mat-card-actions>
+              </mat-card>
           </div>
           <div class="tp-box__side tp-box__back">
             <video width="100%" height="335px" controls autoplay style="border-radius: 25px">
-              <source src="./assets/img/Screen recording 2022-06-29 10.09.28 PM.webm" type="video/webm">
+              <source src="./assets/img/Screen recording 2022-06-30 7.07.25 PM.webm" type="video/webm">
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
-    </section>
-    <section  class="tp-wrapper">
-      <div class="tp-box" (click)="toggleFlip1()" [@flipState]="flip1">
-        <div class="tp-box__side tp-box__front">
-            <mat-card class="example-card">
-              <mat-card-title>Online Booking System</mat-card-title>
-              <mat-card-subtitle>Intermediate React.js App</mat-card-subtitle>
-              <mat-card-content>
-                <p>Explores Dataflow between components</p>
-                <p>{{longText1}}</p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button class="primary">Click to Play Video </button>
-              </mat-card-actions>
-            </mat-card>
+      </section>
+      <section  class="tp-wrapper">
+        <div class="tp-box" (click)="toggleFlip2()" [@flipState]="flip2">
+          <div class="tp-box__side tp-box__front">
+              <mat-card class="example-card">
+                <mat-card-title>Amazon Duplicate</mat-card-title>
+                <mat-card-subtitle></mat-card-subtitle>
+                <mat-card-content>
+                  <p>Intermediate Use of react.js</p>
+                  <p>{{longText2}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button class="primary">Click to Play Video </button>
+                </mat-card-actions>
+              </mat-card>
+          </div>
+          <div class="tp-box__side tp-box__back">
+            <video width="100%" height="335px" controls autoplay style="border-radius: 25px">
+              <source src="./assets/img/Screen recording 2022-06-29 10.31.44 PM.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-        <div class="tp-box__side tp-box__back">
-          <video width="100%" height="335px" controls autoplay style="border-radius: 25px">
-            <source src="./assets/img/Screen recording 2022-06-30 7.07.25 PM.webm" type="video/webm">
-            Your browser does not support the video tag.
-          </video>
+      </section>
+      <section  class="tp-wrapper">
+        <div class="tp-box" (click)="toggleFlip3()" [@flipState]="flip3">
+          <div class="tp-box__side tp-box__front">
+              <mat-card class="example-card">
+                <mat-card-title>Netflix Duplicate</mat-card-title>
+                <mat-card-subtitle></mat-card-subtitle>
+                <mat-card-content>
+                  <p>Fullstack Development</p>
+                  <p>{{longText3}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button class="primary">Click to Play Video </button>
+                </mat-card-actions>
+              </mat-card>
+          </div>
+          <div class="tp-box__side tp-box__back">
+            <video width="100%" height="335px" controls autoplay style="border-radius: 25px">
+              <source src="./assets/img/Screen recording 2022-06-30 7.00.05 PM.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-      </div>
-    </section>
-    <section  class="tp-wrapper">
-      <div class="tp-box" (click)="toggleFlip2()" [@flipState]="flip2">
-        <div class="tp-box__side tp-box__front">
-            <mat-card class="example-card">
-              <mat-card-title>Amazon Duplicate</mat-card-title>
-              <mat-card-subtitle></mat-card-subtitle>
-              <mat-card-content>
-                <p>Intermediate Use of react.js</p>
-                <p>{{longText2}}</p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button class="primary">Click to Play Video </button>
-              </mat-card-actions>
-            </mat-card>
-        </div>
-        <div class="tp-box__side tp-box__back">
-          <video width="100%" height="335px" controls autoplay style="border-radius: 25px">
-            <source src="./assets/img/Screen recording 2022-06-29 10.31.44 PM.webm" type="video/webm">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </section>
-    <section  class="tp-wrapper">
-      <div class="tp-box" (click)="toggleFlip3()" [@flipState]="flip3">
-        <div class="tp-box__side tp-box__front">
-            <mat-card class="example-card">
-              <mat-card-title>Netflix Duplicate</mat-card-title>
-              <mat-card-subtitle>Movie Preview App Fullstack Development</mat-card-subtitle>
-              <mat-card-content>
-                <p>Fullstack Development</p>
-                <p>{{longText3}}</p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button class="primary">Click to Play Video </button>
-              </mat-card-actions>
-            </mat-card>
-        </div>
-        <div class="tp-box__side tp-box__back">
-          <video width="100%" height="335px" controls autoplay style="border-radius: 25px">
-            <source src="./assets/img/Screen recording 2022-06-30 7.00.05 PM.webm" type="video/webm">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
+</div>
+
