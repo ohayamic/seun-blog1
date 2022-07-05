@@ -1,11 +1,17 @@
 .container{
-  background-image: linear-gradient(to right top, #2d0036, #4f015b, #730283, #9a02ac, #C400D7);
-  height: 75vh;
+height: 75vh;
+display: flex;
+position: relative;
+flex-direction: column;
+background: linear-gradient(to right top, #2d0036, #4f015b, #730283, #9a02ac, #C400D7);
 }
+
 .project-banner{
   height: 200px;
+  width: 100%;
   background-color: #1F1A36;
   border: 1px solid #2D2747;
+  position: absolute;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   margin-top: -4px;
@@ -14,3 +20,46 @@
 .project-banner > img{
   height: 200px;
 }
+
+.container>div>div{
+  position: absolute;
+  right: 50;
+  width: 95%;
+}
+
+.container>div>div>p{
+text-align: center;
+color: rgb(199, 180, 180);
+font-size: 16px;
+margin-top: 15px;
+margin-left: auto;
+width: 40%;
+display:block;
+}
+
+.interest{
+  width: 24%;
+  border-radius: 15px;
+  margin-right: 1%;
+  transition: width 1s;
+}
+.interest:hover{
+  width: 26%;
+  border-radius: 15px;
+  margin-right: 1%;
+}
+
+.interest>img{
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  margin-right: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+.container>div>div>p{
+text-align: center; color: rgb(199, 180, 180); font-size: 8px; margin-top: 15px; margin-left: auto; width: 40%;
+display:none;
+}
+}
+
+

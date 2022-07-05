@@ -1,7 +1,23 @@
 <div class="container">
-  <div class="wrapper">
-    <section class="project-banner">
-        <img src="./assets/img/undraw_pair_programming_re_or4x.svg" alt="me" />
-    </section>
-  </div>
+    <div>
+      <section class="project-banner">
+          <img src="./assets/img/undraw_pair_programming_re_or4x.svg" alt="me" />
+      </section>
+      <div>
+        <p>
+            This page shows some of the things I am interested in, my prospects and ambitions.
+            The things I am working on, my likes and dislikes.
+        </p>
+      </div>
+    </div>
+    <div style="font-size:18px; position: absolute; top:200px; width: 100%; ">
+      <div style="text-align: center; color: rgb(199, 180, 180); display: flex;">
+        <div class="interest"  *ngFor="let item of skills">
+          <img  src="./assets/img/{{item}}">
+        </div>
+      </div>
+   </div>
 </div>
+       <!-- <div class="interest"><img  src="./assets/img/{{}}"></div>
+        <div class="interest"><img  src="./assets/img/{{}}"></div>
+        <div class="interest"><img  src="./assets/img/{{}}"></div>-->
