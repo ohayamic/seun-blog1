@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
   Skills: boolean = true;
-  longText = `My goal is to develop software for the ordinary man that meet international quality using the skills I have acquired through the years of researc,
-   projects and personal developement.`;
+  longText = ` My goal is to develop software for the ordinary man that meet international quality using the skills I have acquired
+  through the years of researc, projects and personal developement. `;
 
   constructor() { }
 
