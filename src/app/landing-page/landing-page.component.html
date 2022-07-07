@@ -4,14 +4,14 @@
       <div class="tp-box" (click)="toggleFlip()" [@flipState]="flip">
         <div class="tp-box__side tp-box__front">
           <mat-card class="example-card">
-            <mat-card-title>First Story</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            <mat-card-title>First Internship Abroad</mat-card-title>
+            <mat-card-subtitle>Frontend Developer(Intern)</mat-card-subtitle>
             <mat-card-content>
-              <p>This card indeterminates progress bar.</p>
-              <p>{{longText}}</p>
+              <p>Institution: G_Stock GmbH</p>
+              <p>{{FirstInternship}}</p>
             </mat-card-content>
             <mat-card-actions>
-              <button mat-button class="primary">View Sample Video </button>
+              <button mat-button class="primary">Flip Back to read more </button>
             </mat-card-actions>
           </mat-card>
         </div>
@@ -20,23 +20,69 @@
         </div>
       </div>
   </section>
-  <section  class="tp-wrapper">
+    <section  class="tp-wrapper">
     <div class="tp-box" (click)="toggleFlip1()" [@flipState]="flip1">
       <div class="tp-box__side tp-box__front">
           <mat-card class="example-card">
-            <mat-card-title>Second Story</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            <mat-card-title>First Project</mat-card-title>
+            <mat-card-subtitle>Detecting cracks using ML</mat-card-subtitle>
             <mat-card-content>
-              <p>This card indeterminates progress bar.</p>
-              <p>{{longText}}</p>
+              <p>Institution: OTH-Amberg-Weiden</p>
+              <p>{{Projects.length > 50? Projects.slice(0, 283): Projects }}</p>
             </mat-card-content>
             <mat-card-actions>
-              <button mat-button class="primary">View Sample Video </button>
+              <button mat-button class="primary"> Flip Back to read more </button>
             </mat-card-actions>
           </mat-card>
       </div>
       <div class="tp-box__side tp-box__back">
-        Back
+          <mat-card class="example-card">
+            <mat-card-content>
+              <p>{{Projects.slice(284)}}</p>
+            </mat-card-content>
+            <mat-list role="list" >
+              <p  style="height: 18px; font-weight: 500; font-size: 14px; text-align:left; padding-left:15px">Skills acquired</p>
+              <mat-list-item style="height: 18px; font-weight: normal; font-size: 12px" *ngFor="let skill of Project_skills">
+                <div style="font-style: none;">{{skill}}</div>
+              </mat-list-item>
+            </mat-list>
+            <mat-card-actions>
+              <button mat-button class="primary"> Flip Back </button>
+            </mat-card-actions>
+          </mat-card>
+      </div>
+    </div>
+  </section>
+  <section  class="tp-wrapper">
+    <div class="tp-box" (click)="toggleFlip1()" [@flipState]="flip1">
+      <div class="tp-box__side tp-box__front">
+          <mat-card class="example-card">
+            <mat-card-title>First Project</mat-card-title>
+            <mat-card-subtitle>Detecting cracks using ML</mat-card-subtitle>
+            <mat-card-content>
+              <p>Institution: OTH-Amberg-Weiden</p>
+              <p>{{Projects.length > 50? Projects.slice(0, 283): Projects }}</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="primary"> Flip Back to read more </button>
+            </mat-card-actions>
+          </mat-card>
+      </div>
+      <div class="tp-box__side tp-box__back">
+          <mat-card class="example-card">
+            <mat-card-content>
+              <p>{{Projects.slice(284)}}</p>
+            </mat-card-content>
+            <mat-list role="list" >
+              <p  style="height: 18px; font-weight: 500; font-size: 14px; text-align:left; padding-left:15px">Skills acquired</p>
+              <mat-list-item style="height: 18px; font-weight: normal; font-size: 12px" *ngFor="let skill of Project_skills">
+                <div style="font-style: none;">{{skill}}</div>
+              </mat-list-item>
+            </mat-list>
+            <mat-card-actions>
+              <button mat-button class="primary"> Flip Back </button>
+            </mat-card-actions>
+          </mat-card>
       </div>
     </div>
   </section>
