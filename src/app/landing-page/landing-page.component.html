@@ -8,7 +8,7 @@
             <mat-card-subtitle>Frontend Developer(Intern)</mat-card-subtitle>
             <mat-card-content>
               <p>Institution: G_Stock GmbH</p>
-              <p>{{FirstInternship}}</p>
+              <p>{{FirstInternship.length > 50? FirstInternship.slice(0, 320): FirstInternship }}</p>
             </mat-card-content>
             <mat-card-actions>
               <button mat-button class="primary">Flip Back to read more </button>
@@ -16,7 +16,20 @@
           </mat-card>
         </div>
         <div class="tp-box__side tp-box__back">
-          Back
+            <mat-card class="example-card">
+              <mat-card-content>
+                <p>{{FirstInternship.slice(321)}}</p>
+              </mat-card-content>
+              <mat-list role="list" >
+                <p  style="height: 18px; font-weight: 500; font-size: 14px; text-align:left; padding-left:15px">Skills acquired</p>
+                <mat-list-item style="height: 18px; font-weight: normal; font-size: 12px" *ngFor="let skill of Internship_skills">
+                  <div style="font-style: none;">{{skill}}</div>
+                </mat-list-item>
+              </mat-list>
+              <mat-card-actions>
+                <button mat-button class="primary"> Flip Back </button>
+              </mat-card-actions>
+            </mat-card>
         </div>
       </div>
   </section>
