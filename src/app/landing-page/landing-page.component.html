@@ -4,11 +4,11 @@
       <div class="tp-box" (click)="toggleFlip()" [@flipState]="flip">
         <div class="tp-box__side tp-box__front">
           <mat-card class="example-card">
-            <mat-card-title>First Internship Abroad</mat-card-title>
+            <mat-card-title>First Internship</mat-card-title>
             <mat-card-subtitle>Frontend Developer(Intern)</mat-card-subtitle>
             <mat-card-content>
-              <p>Institution: G_Stock GmbH</p>
-              <p>{{FirstInternship.length > 50? FirstInternship.slice(0, 320): FirstInternship }}</p>
+              <p>Institution: Andela</p>
+              <p>{{FirstInternship.length > 50? FirstInternship.slice(0, 314): FirstInternship }}</p>
             </mat-card-content>
             <mat-card-actions>
               <button mat-button class="primary">Flip Back to read more </button>
@@ -18,10 +18,10 @@
         <div class="tp-box__side tp-box__back">
             <mat-card class="example-card">
               <mat-card-content>
-                <p>{{FirstInternship.slice(321)}}</p>
+                <p>{{FirstInternship.slice(314)}}</p>
               </mat-card-content>
               <mat-list role="list" >
-                <p  style="height: 18px; font-weight: 500; font-size: 14px; text-align:left; padding-left:15px">Skills acquired</p>
+                <p  style="height: 18px; font-weight: 500; font-size: 14px; text-align:left; padding-left:15px">Soft skills</p>
                 <mat-list-item style="height: 18px; font-weight: normal; font-size: 12px" *ngFor="let skill of Internship_skills">
                   <div style="font-style: none;">{{skill}}</div>
                 </mat-list-item>
@@ -40,8 +40,8 @@
             <mat-card-title>First Project</mat-card-title>
             <mat-card-subtitle>Detecting cracks using ML</mat-card-subtitle>
             <mat-card-content>
-              <p>Institution: OTH-Amberg-Weiden</p>
-              <p>{{Projects.length > 50? Projects.slice(0, 283): Projects }}</p>
+              <p>Institution:  FUTA, Nigeria</p>
+              <p>{{Projects.length > 50? Projects.slice(0, 287): Projects }}</p>
             </mat-card-content>
             <mat-card-actions>
               <button mat-button class="primary"> Flip Back to read more </button>
@@ -51,7 +51,7 @@
       <div class="tp-box__side tp-box__back">
           <mat-card class="example-card">
             <mat-card-content>
-              <p>{{Projects.slice(284)}}</p>
+              <p>{{Projects.slice(288)}}</p>
             </mat-card-content>
             <mat-list role="list" >
               <p  style="height: 18px; font-weight: 500; font-size: 14px; text-align:left; padding-left:15px">Skills acquired</p>
