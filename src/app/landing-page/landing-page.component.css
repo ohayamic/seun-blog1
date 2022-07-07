@@ -22,6 +22,10 @@
             perspective: 800px;
   }
 
+    .primary{
+   background-color: #1F1A36;
+   color: #B3B8CD;
+  }
   .tp-box {
       position: relative;
       width: 350px;
