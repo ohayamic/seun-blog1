@@ -32,7 +32,7 @@ flip: string = 'inactive';
   Projects = `I have always been facinated learning new technologies so when the opportunity came for me to write my thesis in machine learning, I jumped
    at it. Being a very curious person, I painstaking learnt the fundamental concepts of the technology. This gave me a solid understanding to grasp
    complex topics down the line. In all, though it was challenging it was all worth it and I continue to leverage the knowledge to this day.`
-  Project_skills = ['Machine Learning', 'Tensorflow', 'Image Processing', 'Visualization', 'Classification']
+  Project_skills = ['Python', 'Numpy', 'Pandas', 'Matplotlib', 'Tensorflow','Machine Learning', 'Image Processing']
   constructor() { }
 
   ngOnInit(): void {
