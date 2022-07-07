@@ -19,8 +19,10 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ]
 })
 export class LandingPageComponent implements OnInit {
-flip: string = 'inactive';
+  flip: string = 'inactive';
   flip1: string = 'inactive';
+  flip2: string = 'inactive';
+  
   longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
     from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
     originally bred for hunting.`;
@@ -44,5 +46,9 @@ flip: string = 'inactive';
 
   toggleFlip1() {
     this.flip1 = (this.flip1 == 'inactive') ? 'active' : 'inactive';
+  }
+
+    toggleFlip2() {
+    this.flip2 = (this.flip2 == 'inactive') ? 'active' : 'inactive';
   }
 }
