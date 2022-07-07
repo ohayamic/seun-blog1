@@ -24,7 +24,12 @@ flip: string = 'inactive';
   longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
     from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
     originally bred for hunting.`;
-
+  FirstInternship = ` My first internship was very exciting, alone in a foreign land with temperature below zero and a very huge cultural difference,
+  I was welcomed by my collegues with open arms. This helped me to manage the shock considerably. My `
+  Projects = `I have always been facinated learning new technologies so when the opportunity came for me to write my thesis in ML, I jumped
+   at it. Being a very curious person, I painstaking learnt the fundamental concepts of the technology. This gave me a solid understanding to grasp
+   complex topics down the line. In all, though it was challenging it was all worth it and I continue to leverage the knowledge to this day.`
+  Project_skills = ['Machine Learning', 'AI', 'Tensorflow', 'Image Processing', 'Visualization', 'Classification']
   constructor() { }
 
   ngOnInit(): void {
