@@ -31,7 +31,7 @@
   </mat-sidenav>
     <mat-sidenav-content>
       <!-- Header-->
-      <mat-toolbar color="primary" style="position:sticky">
+      <mat-toolbar color="primary" style="position:sticky; z-index: 10;">
         <button
           mat-icon-button
           type="button"
@@ -40,7 +40,7 @@
           (click)="drawer.toggle()"
           class="example-icon"
           aria-label="Example icon-button with menu icon">
-          <mat-icon>menu</mat-icon>
+          <mat-icon class="my-icon">menu</mat-icon>
         </button>
         <span>Seun's Djing Project</span>
         <span class="example-spacer"></span>
