@@ -70,11 +70,11 @@
     <div class="tp-box" (click)="toggleFlip2()" [@flipState]="flip2">
       <div class="tp-box__side tp-box__front">
           <mat-card class="example-card">
-            <mat-card-title>First Project</mat-card-title>
-            <mat-card-subtitle>Detecting cracks using ML</mat-card-subtitle>
+            <mat-card-title>First Voluntary Work</mat-card-title>
+            <mat-card-subtitle>One year voluntary work</mat-card-subtitle>
             <mat-card-content>
-              <p>Institution: OTH-Amberg-Weiden</p>
-              <p>{{Projects.length > 50? Projects.slice(0, 283): Projects }}</p>
+              <p>Federal girl college Narbodo</p>
+              <p>{{Voluntary.length > 50? Voluntary.slice(0, 279): Voluntary }}</p>
             </mat-card-content>
             <mat-card-actions>
               <button mat-button class="primary"> Flip Back to read more </button>
@@ -84,11 +84,11 @@
       <div class="tp-box__side tp-box__back">
           <mat-card class="example-card">
             <mat-card-content>
-              <p>{{Projects.slice(284)}}</p>
+              <p>{{Voluntary.slice(284)}}</p>
             </mat-card-content>
             <mat-list role="list" >
               <p  style="height: 18px; font-weight: 500; font-size: 14px; text-align:left; padding-left:15px">Skills acquired</p>
-              <mat-list-item style="height: 18px; font-weight: normal; font-size: 12px" *ngFor="let skill of Project_skills">
+              <mat-list-item style="height: 18px; font-weight: normal; font-size: 12px" *ngFor="let skill of Voluntary_skills">
                 <div style="font-style: none;">{{skill}}</div>
               </mat-list-item>
             </mat-list>
