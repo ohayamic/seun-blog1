@@ -14,12 +14,11 @@
   margin-top: 15px;
   margin-left: auto;
   width: 40%;
-  display:block;
 }
 
 .project-banner{
   height: 200px;
-  width: 100%;
+  width: 98%;
   background-color: #1F1A36;
   border: 1px solid #2D2747;
   position: absolute;
