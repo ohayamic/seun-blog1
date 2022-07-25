@@ -99,4 +99,13 @@
  max-height: 350px;
 }
 
-
+@media only screen and (max-width: 600px) {
+.wrapper{
+  display: flex;
+  height: 210vh;
+  position: relative;
+  flex-direction: column;
+  background-image: linear-gradient(to right top, #2d0036, #4f015b, #730283, #9a02ac, #C400D7);
+  padding: 5px 0;
+}
+}
