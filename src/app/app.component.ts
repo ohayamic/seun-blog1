@@ -41,9 +41,9 @@ export class AppComponent {
       link:  "/interest",
     },
     {
-      name: 'Clients',
+      name: 'Design',
       icon: 'groups',
-      link:  "/clients",
+      link:  "/design",
     },
   ];
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)

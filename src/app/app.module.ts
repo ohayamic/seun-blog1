@@ -16,6 +16,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { InterestComponent } from './interest/interest.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { DesignComponent } from './design/design.component';
+
 import {
   faGithub,
   faFacebook,
@@ -28,7 +30,8 @@ import {
     ProfileComponent,
     ProjectsComponent,
     LandingPageComponent,
-    InterestComponent
+    InterestComponent,
+    DesignComponent
   ],
   imports: [
     BrowserModule,
