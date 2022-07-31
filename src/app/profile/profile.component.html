@@ -8,40 +8,24 @@
         fullstack developer <br></p>
       <div class="buttons">
           <button type="button"  class="primary" (click)="Skills = true">
-              View Skills
+              About Me
           </button>
           <button  type="button" class="primary"  (click)=" Skills = false">
               My Statement
           </button>
       </div>
       <div class="skills" *ngIf="Skills; else isSkills">
-          <h5>Skills</h5>
-          <ul>
-              <li>UI / UX</li>
-              <li>HTML</li>
-              <li>Vue</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Front End Development</li>
-              <li>Angular</li>
-              <!--<li>React</li>
-              <li>API</li>
-              <li>Web Development</li>
-              <li>Bootstrap</li>
-              <li>NLP</li>
-              <li>FastApi</li>
-              <li>Pytorch</li>
-              <li>Tensorflow</li>
-              <li>Transformers</li>
-              <li>Machine Learning</li>
-              <li>Image Detection</li>
-              <li>Image Classification</li>
-              -->
-          </ul>
+          <div style = " border-radius: 25px;">
+              <mat-card class="example-card-about-me">
+                <mat-card-content>
+                  <p>{{AboutMe}}</p>
+                  <p>{{Others}}</p>
+                </mat-card-content>
+              </mat-card>
+          </div>
       </div>
       <ng-template #isSkills>
         <div class="skills">
-          <h5>Statement</h5>
           <div style = " border-radius: 25px;">
               <mat-card class="example-card">
                 <mat-card-content>
@@ -51,5 +35,17 @@
           </div>
         </div>
       </ng-template>
+      <div class="skills" >
+        <h4>Skills</h4>
+          <ul>
+              <li>UI / UX</li>
+              <li>HTML</li>
+              <li>Vue</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Front End Development</li>
+              <li>Angular</li>
+          </ul>
+      </div>
   </div>
 </div>
