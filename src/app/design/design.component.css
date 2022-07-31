@@ -1,5 +1,5 @@
 .container{
-height: 75vh;
+height: 70vh;
 display: flex;
 position: relative;
 flex-direction: column;
@@ -30,7 +30,7 @@ background: linear-gradient(to right top, #2d0036, #4f015b, #730283, #9a02ac, #C
 .container>div>div>p{
 text-align: center;
 color: rgb(199, 180, 180);
-font-size: 16px;
+font-size: 14px;
 margin-top: 15px;
 margin-left: auto;
 width: 40%;
@@ -79,7 +79,7 @@ display:block;
 
 @media only screen and (max-width: 600px) {
 .container{
-  height: 80vh;
+  height: 95vh;
   display: flex;
   position: relative;
   flex-direction: column;
